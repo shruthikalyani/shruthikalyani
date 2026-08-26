@@ -14,7 +14,7 @@
 <br/><br/>
 
 <!-- Original skull/hello ASCII-art render, dropped straight in for pixel-perfect match -->
-<img src="./assets/skull-hello.jpeg" width="420"/>
+<img src="./assets/IMG_1024.jpeg" width="420"/>
 
 </div>
 
