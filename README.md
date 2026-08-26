@@ -1,39 +1,22 @@
-## Hi there 👋
 <div align="center">
 
-<!-- Animated wave header -->
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:000000,50:0d1f0d,100:00ff41&height=200&section=header&text=whoami&fontSize=60&fontColor=00ff41&animation=fadeIn&fontAlignY=38&desc=welcome%20to%20my%20terminal&descAlignY=58&descSize=18&descColor=00ff41" width="100%"/>
+<!-- Terminal-style rect banner, matched to the skull art's matrix green -->
+<img src="https://capsule-render.vercel.app/api?type=rect&color=000000&height=3&width=800"/>
 
-<!-- Typing animation -->
-<a href="https://git.io/typing-svg">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=22&duration=3000&pause=800&color=00FF41&center=true&vCenter=true&width=600&lines=System+breach+successful...;Loading+developer+profile...;Welcome%2C+visitor.;>_+Let's+build+something." alt="Typing SVG" />
-</a>
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=40&duration=3000&pause=1000&color=00FF41&background=000000&center=true&vCenter=true&width=800&height=90&lines=root%40shruthi%3A~%24+whoami" alt="whoami banner" />
+
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=20&duration=2500&pause=700&color=00FF41&background=000000&center=true&vCenter=true&width=800&lines=Shruthi+Kalyani;High+School+Student;Chennai%2C+India;status%3A+manifesting+my+Tony+Stark+era+%F0%9F%A6%BE" alt="Typing SVG" />
+
+<img src="https://capsule-render.vercel.app/api?type=rect&color=000000&height=3&width=800"/>
+
+<br/><br/>
+
+<!-- Original skull/hello ASCII-art render, dropped straight in for pixel-perfect match -->
+<img src="./assets/skull-hello.jpeg" width="420"/>
 
 </div>
 
-```
-                                                  HELLO
-                                                   /
-                    .##.        .##.               /
-                  .####:      :####.
-                .######:      :######:
-               .########.    .########.
-              :##########:  :##########:
-             :####################################:
-            .######################################.
-            :######################################:
-            '####'    '######'    '####'
-            ###!  .# #### #.  !###
-            :##b.  '  ####  '  .d##:
-        ...:####:::::####::::####:::"::.
-       :"""":################"::"":::.
-      :"""  :P##################P:.."  '"
-     :""     ""##########P"""'      ""'.
-              :############:
-             :##############:
-             :################:
-             :##################:
-```
+<br/>
 
 <div align="center">
 
@@ -42,17 +25,20 @@
 </div>
 
 ```yaml
-name: Your Name
-role: Software Engineer
+name: Shruthi Kalyani
+role: High School Student
 location: Chennai, India
-status: "compiling coffee into code"
-current_focus: [open-source, systems programming, security]
+status: "manifesting my Tony Stark era 🦾"
+current_focus: [learning to code, building cool things, world domination-ish]
 fun_fact: "I read READMEs before I read the docs"
 ```
 
 <div align="center">
 
 ### `> ls -la ./skills`
+
+<!-- swap these for your actual stack once you start picking up languages/tools -->
+
 
 <img src="https://skillicons.dev/icons?i=py,js,ts,react,nodejs,linux,git,docker,rust,go&theme=dark" />
 
