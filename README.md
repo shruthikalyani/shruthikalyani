@@ -7,7 +7,7 @@
 
 <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=20&duration=2500&pause=700&color=00FF41&background=000000&center=true&vCenter=true&width=800&lines=Shruthi+Kalyani;High+School+Student;Chennai%2C+India;status%3A+manifesting+my+Tony+Stark+era+%F0%9F%A6%BE" alt="Typing SVG" />
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:000000,50:0d1f0d,100:00ff41&height=130&section=header&text=👋%20Hello,%20Visitor!&fontSize=35&fontColor=00ff41&animation=fadeIn&fontAlignY=45" width="100%"/>
+<img src="./assets/hello-visitor.svg" width="100%"/>
 
 <img src="https://capsule-render.vercel.app/api?type=rect&color=000000&height=3&width=800"/>
 
