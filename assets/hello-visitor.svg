@@ -1,0 +1,123 @@
+<svg width="800" height="150" viewBox="0 0 800 150" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      .glitch-text {
+        font-family: 'Courier New', 'Consolas', monospace;
+        font-weight: 700;
+        font-size: 40px;
+        letter-spacing: 6px;
+      }
+      .rain {
+        font-family: 'Courier New', monospace;
+        font-size: 14px;
+        fill: #00ff41;
+      }
+    </style>
+    <clipPath id="sliceClip1">
+      <rect x="0" y="55" width="800" height="10"/>
+    </clipPath>
+    <clipPath id="sliceClip2">
+      <rect x="0" y="85" width="800" height="14"/>
+    </clipPath>
+    <clipPath id="sliceClip3">
+      <rect x="0" y="40" width="800" height="8"/>
+    </clipPath>
+  </defs>
+ 
+  <!-- pure black background -->
+  <rect width="800" height="150" fill="#000000"/>
+ 
+  <!-- faint matrix-style falling code columns in background -->
+  <g opacity="0.25">
+    <text class="rain" x="20" y="20">01</text>
+    <text class="rain" x="20" y="40">10</text>
+    <text class="rain" x="20" y="60">11</text>
+    <text class="rain" x="90" y="15">7F</text>
+    <text class="rain" x="90" y="35">A3</text>
+    <text class="rain" x="90" y="55">C9</text>
+    <text class="rain" x="700" y="20">0x</text>
+    <text class="rain" x="700" y="40">1F</text>
+    <text class="rain" x="700" y="60">B2</text>
+    <text class="rain" x="750" y="25">10</text>
+    <text class="rain" x="750" y="45">01</text>
+    <text class="rain" x="750" y="65">11</text>
+    <animateTransform attributeName="transform" type="translate"
+      values="0 0; 0 15; 0 0" dur="4s" repeatCount="indefinite"/>
+  </g>
+ 
+  <!-- scanlines -->
+  <g opacity="0.12">
+    <rect x="0" y="10" width="800" height="2" fill="#00ff41"/>
+    <rect x="0" y="34" width="800" height="2" fill="#00ff41"/>
+    <rect x="0" y="58" width="800" height="2" fill="#00ff41"/>
+    <rect x="0" y="82" width="800" height="2" fill="#00ff41"/>
+    <rect x="0" y="106" width="800" height="2" fill="#00ff41"/>
+    <rect x="0" y="130" width="800" height="2" fill="#00ff41"/>
+  </g>
+ 
+  <!-- moving scan beam sweeping down the whole banner -->
+  <rect x="0" y="0" width="800" height="18" fill="#00ff41" opacity="0.08">
+    <animate attributeName="y" values="0;132;0" dur="3.5s" repeatCount="indefinite"/>
+  </rect>
+ 
+  <!-- cyan ghost layer -->
+  <text class="glitch-text" x="400" y="85" text-anchor="middle" fill="#00fff9" opacity="0.75">
+    HELLO, VISITOR
+    <animateTransform attributeName="transform" type="translate"
+      values="0 0; -6 0; 3 0; -2 0; 0 0; -8 0; 0 0; -1 0; 0 0"
+      dur="1.8s" repeatCount="indefinite" keyTimes="0;0.05;0.1;0.15;0.2;0.45;0.5;0.8;1"/>
+  </text>
+ 
+  <!-- magenta ghost layer -->
+  <text class="glitch-text" x="400" y="85" text-anchor="middle" fill="#ff00c8" opacity="0.75">
+    HELLO, VISITOR
+    <animateTransform attributeName="transform" type="translate"
+      values="0 0; 6 0; -3 0; 2 0; 0 0; 8 0; 0 0; 1 0; 0 0"
+      dur="1.8s" repeatCount="indefinite" keyTimes="0;0.05;0.1;0.15;0.2;0.45;0.5;0.8;1"/>
+  </text>
+ 
+  <!-- base green terminal text with hard flicker cuts -->
+  <text class="glitch-text" x="400" y="85" text-anchor="middle" fill="#00ff41">
+    HELLO, VISITOR
+    <animate attributeName="opacity"
+      values="1;1;0.1;1;1;0.2;1;1;0;1;1"
+      dur="1.8s" repeatCount="indefinite" keyTimes="0;0.14;0.16;0.18;0.42;0.44;0.46;0.78;0.8;0.82;1"/>
+  </text>
+ 
+  <!-- blinking terminal cursor block after text -->
+  <rect x="590" y="58" width="20" height="34" fill="#00ff41">
+    <animate attributeName="opacity" values="1;1;0;0;1" dur="1s" repeatCount="indefinite" keyTimes="0;0.45;0.5;0.95;1"/>
+  </rect>
+ 
+  <!-- horizontal glitch slices that jump/offset briefly -->
+  <g clip-path="url(#sliceClip1)">
+    <text class="glitch-text" x="400" y="85" text-anchor="middle" fill="#00ff41">
+      HELLO, VISITOR
+      <animateTransform attributeName="transform" type="translate"
+        values="0 0; 0 0; 18 0; -14 0; 0 0; 0 0"
+        dur="2.2s" repeatCount="indefinite" keyTimes="0;0.3;0.32;0.34;0.36;1"/>
+    </text>
+  </g>
+  <g clip-path="url(#sliceClip2)">
+    <text class="glitch-text" x="400" y="85" text-anchor="middle" fill="#00fff9">
+      HELLO, VISITOR
+      <animateTransform attributeName="transform" type="translate"
+        values="0 0; 0 0; -22 0; 16 0; 0 0; 0 0"
+        dur="2.2s" repeatCount="indefinite" keyTimes="0;0.6;0.62;0.64;0.66;1"/>
+    </text>
+  </g>
+  <g clip-path="url(#sliceClip3)">
+    <text class="glitch-text" x="400" y="85" text-anchor="middle" fill="#ff00c8">
+      HELLO, VISITOR
+      <animateTransform attributeName="transform" type="translate"
+        values="0 0; 0 0; 12 0; -20 0; 0 0; 0 0"
+        dur="2.2s" repeatCount="indefinite" keyTimes="0;0.1;0.12;0.14;0.16;1"/>
+    </text>
+  </g>
+ 
+  <!-- flickering static noise bar -->
+  <rect x="0" y="60" width="800" height="6" fill="#ffffff" opacity="0">
+    <animate attributeName="opacity" values="0;0;0.5;0;0;0;0.3;0" dur="1.8s" repeatCount="indefinite" keyTimes="0;0.16;0.17;0.18;0.44;0.45;0.46;1"/>
+  </rect>
+ 
+</svg>
